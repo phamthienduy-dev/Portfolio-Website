@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon-64x64.png" />
+    <link rel="apple-touch-icon" href="img/favicon_io/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="script.js"></script>
+
+    <title>Welcome to my portfolio!</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"> DuyFE </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#about" class="main-nav-link">Giới thiệu</a></li>
+          <li><a href="#portfolio" class="main-nav-link">Portfolio</a></li>
+          <li><a href="#testimonial" class="main-nav-link">Chứng thực</a></li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
+              class="main-nav-link nav-cta btn--full"
+              target="_blank"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="section-hero">
+        <div class="hero container">
+          <div class="hero-text-box">
+            <p class="hero-greet">Xin chào! Tên mình là</p>
+            <h1 class="hero-name">Phạm Thiên Duy</h1>
+            <p class="hero-job">
+              Mình là Junior <span class="highlight">Front End</span> Developer
+            </p>
+            <p class="hero-description">
+              Mình là một developer đến từ Vũng Tàu. Mình đam mê công nghệ, lập
+              trình web và đặc biệt yêu thích lập trình Front End.
+            </p>
+            <a href="#" class="btn btn--full margin-right-sm" id="contact"
+              >Liên hệ</a
+            >
+          </div>
+
+          <div class="hero-logos">
+            <ul class="hero-logos-bar">
+              <li>
+                <a
+                  href="https://www.facebook.com/phamthienduy181"
+                  target="_blank"
+                  ><ion-icon name="logo-facebook" class="hero-logo"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Thienduy181Duy" target="_blank"
+                  ><ion-icon name="logo-twitter" class="hero-logo"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/pham-thien-duy-ab5a0714a/"
+                  target="_blank"
+                  ><ion-icon name="logo-linkedin" class="hero-logo"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/thienduy181" target="_blank"
+                  ><ion-icon name="logo-github" class="hero-logo"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION -->
+      <section class="section section-about" id="about">
+        <div class="container">
+          <span class="subheading"> Giới thiệu </span>
+          <p class="heading-secondary">Tất tần tật mọi thứ về mình</p>
+        </div>
+
+        <div
+          class="about-container container grid grid--2-cols margin-bottom-sm"
+        >
+          <div class="profile-img-box">
+            <picture>
+              <source srcset="img/Profile-Picture.webp" type="image/webp" />
+              <source srcset="img/Profile-Picture Min.jpg" type="image/jpg" />
+
+              <img
+                src="img/Profile-Picture Min.jpg"
+                class="profile-img"
+                alt="Profile Picture"
+              />
+            </picture>
+          </div>
+
+          <div class="about-skills">
+            <div class="about-heading heading-small">
+              <span class="about-heading-text">Mình là ai?</span>
+            </div>
+            <div class="about-description">
+              <p>
+                Mình là Duy, hiện đang học tập tại Đà Lạt. Mình đến với ngành
+                lập trình từ con số 0. Vì đam mê nên mình quyết định tự học từ A
+                -> Z về lập trình Front End
+              </p>
+              <p class="about-skill-heading">Kỹ năng:</p>
+              <div class="about-skill-box">
+                <ul class="about-skill-list">
+                  <li class="skill-list-item">
+                    <ion-icon
+                      name="logo-html5"
+                      class="skill-icon htm5-logo"
+                    ></ion-icon>
+                    <span>HTML5</span>
+                  </li>
+                  <li class="skill-list-item">
+                    <ion-icon
+                      name="logo-css3"
+                      class="skill-icon css3-logo"
+                    ></ion-icon>
+                    <span>CSS3</span>
+                  </li>
+                  <li class="skill-list-item">
+                    <ion-icon
+                      name="logo-javascript"
+                      class="skill-icon javascript-logo"
+                    ></ion-icon>
+                    <span>JavaScript</span>
+                  </li>
+                  <li class="skill-list-item">
+                    <ion-icon
+                      name="logo-react"
+                      class="skill-icon react-logo"
+                    ></ion-icon>
+                    <span>React</span>
+                  </li>
+                  <li class="skill-list-item">
+                    <ion-icon
+                      name="logo-sass"
+                      class="skill-icon sass-logo"
+                    ></ion-icon>
+                    <span>SASS</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-strong margin-bottom-sm">
+          <div class="strong-container container grid grid--2-cols">
+            <div class="strong-text-box">
+              <div class="strong-heading">
+                <span class="strong-heading-text heading-small"
+                  >Mình có thể làm gì?</span
+                >
+              </div>
+              <div class="strong-description">
+                Thiết kế, lập trình những trang web nhanh, đẹp, trực quan cho
+                người dùng luôn là mối quan tâm lớn nhất của mình.
+              </div>
+              <ul class="strong-list">
+                <li class="strong-list-item">
+                  <div class="strong-list-logo-box color-1">
+                    <ion-icon
+                      name="color-palette"
+                      class="strong-list-logo"
+                    ></ion-icon>
+                  </div>
+                  <div class="strong-list-description">
+                    <p class="strong-list-description-heading">
+                      Thiết kế UI/UX
+                    </p>
+                    <span class="strong-list-description-text"
+                      >Giao diện đẹp, bắt mắt, dễ sử dụng là điều khiến mọi
+                      người ghé thăm lại trang web.</span
+                    >
+                  </div>
+                </li>
+                <li class="strong-list-item">
+                  <div class="strong-list-logo-box">
+                    <ion-icon name="layers" class="strong-list-logo"></ion-icon>
+                  </div>
+                  <div class="strong-list-description">
+                    <p class="strong-list-description-heading">
+                      Thiết kế Responsive
+                    </p>
+                    <span class="strong-list-description-text"
+                      >Không chỉ sử dụng máy tính. Mọi người còn dùng điện
+                      thoại, máy tính bảng,....
+                    </span>
+                  </div>
+                </li>
+                <li class="strong-list-item">
+                  <div class="strong-list-logo-box color-2">
+                    <ion-icon name="flash" class="strong-list-logo"></ion-icon>
+                  </div>
+                  <div class="strong-list-description">
+                    <p class="strong-list-description-heading">Nhanh</p>
+                    <span class="strong-list-description-text"
+                      >Tốc độ load trang web cũng rất quan trọng để tối ưu hóa
+                      trải nghiệm người dùng</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="strong-img-box">
+              <img
+                src="img/what-illustrate.png"
+                alt="Illustration of coding"
+                class="strong-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="about-where margin-bottom-sm">
+          <div class="where-container container grid grid--2-cols">
+            <div class="where-img-box">
+              <img
+                src="img/where-illustrate.png"
+                alt="Illustration of study"
+                class="where-img"
+              />
+            </div>
+            <div class="where-text-box">
+              <div class="where-heading">
+                <span class="where-heading-text heading-small"
+                  >Mình học từ đâu?</span
+                >
+              </div>
+              <div class="where-description">
+                Mình học tất cả mọi thứ từ con số 0. Thế nên mình chọn học ở
+                những nơi tốt nhất.
+              </div>
+
+              <div class="where-logos-box">
+                <div class="where-logos">
+                  <img
+                    src="img/udemy-logo.png"
+                    class="where-logo-img"
+                    alt="udemy-logo"
+                  />
+                  <img
+                    src="img/codecademy-logo.png"
+                    class="where-logo-img"
+                    alt="codecademy-logo"
+                  />
+                </div>
+              </div>
+
+              <div class="where-certificate">
+                <a
+                  href="https://drive.google.com/file/d/1eXD8MDY5j-FAvHRlBXQvkU8SzuhE9VsV/view?usp=sharing"
+                  class="btn btn--full"
+                  target="_blank"
+                >
+                  Chứng nhận</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-how margin-bottom-sm">
+          <div class="how-container container grid grid--2-cols">
+            <div class="how-text-box">
+              <div class="how-heading">
+                <span class="how-heading-text heading-small"
+                  >Mình code như thế nào?</span
+                >
+              </div>
+              <div class="where-description">
+                UI/UX luôn là điều mình quan tâm nhất. Thế nên mình luôn dùng
+                những nguồn uy tín.
+              </div>
+
+              <div class="where-resources">
+                <div class="resources__tab-container">
+                  <button
+                    class="
+                      btn-resource
+                      resources__tab resources__tab--1 resources__tab--active
+                      color-4
+                    "
+                    data-tab="1"
+                  >
+                    Hình ảnh
+                  </button>
+                  <button
+                    class="
+                      btn-resource
+                      resources__tab resources__tab--2
+                      color-5
+                    "
+                    data-tab="2"
+                  >
+                    Màu sắc
+                  </button>
+                  <button
+                    class="
+                      btn-resource
+                      resources__tab resources__tab--3
+                      color-6
+                    "
+                    data-tab="3"
+                  >
+                    Icons
+                  </button>
+                  <button
+                    class="
+                      btn-resource
+                      resources__tab resources__tab--4
+                      color-7
+                    "
+                    data-tab="4"
+                  >
+                    Cảm hứng
+                  </button>
+                </div>
+
+                <div
+                  class="
+                    resources__content-container
+                    resources__content-container--1
+                    resources__content-container--active
+                  "
+                >
+                  <div class="resources__content">
+                    <ul class="resources-list">
+                      <li class="resources-list-item">
+                        <div class="resources__logo">
+                          <img
+                            src="img/unsplash-logo.png"
+                            alt="unsplash logo"
+                          />
+                        </div>
+
+                        <div class="resources-list-description">
+                          <p class="resources-list-description-heading">
+                            <a
+                              href="https://unsplash.com/"
+                              class="resources-link"
+                              target="_blank"
+                              >Unsplash</a
+                            >
+                          </p>
+                          <span class="resources-list-description-text"
+                            >Nguồn ảnh chất lượng cao số 1. Có nhiều hình hơn
+                            bạn có thể tưởng tượng đấy.</span
+                          >
+                        </div>
+                      </li>
+                      <li class="resources-list-item">
+                        <div class="resources__logo">
+                          <img src="img/uifaces-logo.png" alt="uifaces logo" />
+                        </div>
+
+                        <div class="resources-list-description">
+                          <p class="resources-list-description-heading">
+                            <a
+                              href="https://uifaces.co/"
+                              class="resources-link"
+                              target="_blank"
+                              >UI Faces</a
+                            >
+                          </p>
+                          <span class="resources-list-description-text"
+                            >Ảnh avatar, thích hợp cho việc làm ví dụ, đừng sử
+                            dụng như ảnh người thật.</span
+                          >
+                        </div>
+                      </li>
+                      <li class="resources-list-item">
+                        <div class="resources__logo">
+                          <img src="img/undraw-logo.png" alt="undraw logo" />
+                        </div>
+
+                        <div class="resources-list-description">
+                          <p class="resources-list-description-heading">
+                            <a
+                              href="https://undraw.co/illustrations"
+                              class="resources-link"
+                              target="_blank"
+                              >unDraw</a
+                            >
+                          </p>
+                          <span class="resources-list-description-text"
+                            >Hàng trăm hình ảnh illustrations miễn phí, còn có
+                            thể custom màu nữa đấy.</span
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="
+                    resources__content-container resources__content-container--2
+                  "
+                >
+                  <div class="resources__content">
+                    <ul class="resources-list">
+                      <li class="resources-list-item">
+                        <div class="resources__logo">
+                          <img
+                            src="img/opencolor-logo.png"
+                            alt="opencolor logo"
+                          />
+                        </div>
+
+                        <div class="resources-list-description">
+                          <p class="resources-list-description-heading">
+                            <a
+                              href="https://yeun.github.io/open-color/"
+                              class="resources-link"
+                              target="_blank"
+                              >Open Color</a
+                            >
+                          </p>
+                          <span class="resources-list-description-text"
+                            >Open Color sẽ giúp bạn chọn màu sắc ưng ý cho
+                            website của mình.</span
+                          >
+                        </div>
+                      </li>
+                      <li class="resources-list-item">
+                        <div class="resources__logo">
+                          <img
+                            src="img/maketintsandshades-logo.png"
+                            alt="maketintsandshades logo"
+                          />
+                        </div>
+
+                        <div class="resources-list-description">
+                          <p class="resources-list-description-heading">
+                            <a
+                              href="https://maketintsandshades.com/"
+                              class="resources-link"
+                              target="_blank"
+                              >Tint and Shade Generator</a
+                            >
+                          </p>
+                          <span class="resources-list-description-text"
+                            >Dễ dàng tạo ra màu tối và sáng hơn của bất kì màu
+                            nào mà bạn muốn.</span
+                          >
+                        </div>
+                      </li>
+                      <li class="resources-list-item">
+                        <div class="resources__logo">
+                          <img src="img/coolors-logo.png" alt="coolors logo" />
+                        </div>
+
+                        <div class="resources-list-description">
+                          <p class="resources-list-description-heading">
+                            <a
+                              href="https://coolors.co/contrast-checker/112a46-acc8e5"
+                              class="resources-link"
+                              target="_blank"
+                              >Coolors Contrast Checker</a
+                            >
+                          </p>
+                          <span class="resources-list-description-text"
+                            >Công cụ tuyệt vời để kiểm tra xem độ tương phản
+                            giữa hai màu.</span
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="
+                    resources__content-container resources__content-container--3
+                  "
+                >
+                  <div class="resources__content">
+                    <ul class="resources-list">
+                      <li class="resources-list-item">
+                        <div class="resources__logo">
+                          <img
+                            src="img/ionicons-logo.png"
+                            alt="ionicons logo"
+                          />
+                        </div>
+
+                        <div class="resources-list-description">
+                          <p class="resources-list-description-heading">
+                            <a
+                              href="https://ionic.io/ionicons"
+                              class="resources-link"
+                              target="_blank"
+                              >Ionicons</a
+                            >
+                          </p>
+                          <span class="resources-list-description-text"
+                            >Một set icon với thiết kế bo tròn tuyệt vời. Và đặc
+                            biệt là 100% free.</span
+                          >
+                        </div>
+                      </li>
+                      <li class="resources-list-item">
+                        <div class="resources__logo">
+                          <img
+                            src="img/heroicons-logo.png"
+                            alt="heroicons logo"
+                          />
+                        </div>
+
+                        <div class="resources-list-description">
+                          <p class="resources-list-description-heading">
+                            <a
+                              href="https://heroicons.com/"
+                              class="resources-link"
+                              target="_blank"
+                              >Hero Icons</a
+                            >
+                          </p>
+                          <span class="resources-list-description-text"
+                            >Set icon với 230 hình, có cả outline và solid
+                            styles, thích hợp khi dùng 24px*24px</span
+                          >
+                        </div>
+                      </li>
+                      <li class="resources-list-item">
+                        <div class="resources__logo">
+                          <img
+                            src="img/phosphoricons-logo.png"
+                            alt="phosphoricons logo"
+                          />
+                        </div>
+
+                        <div class="resources-list-description">
+                          <p class="resources-list-description-heading">
+                            <a
+                              href="https://phosphoricons.com/"
+                              class="resources-link"
+                              target="_blank"
+                              >Phosphor Icons</a
+                            >
+                          </p>
+                          <span class="resources-list-description-text"
+                            >SVG icon set mang thiết kế vuông. Độ dày và màu sắc
+                            có thể custom.</span
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="
+                    resources__content-container resources__content-container--4
+                  "
+                >
+                  <div class="resources__content">
+                    <ul class="resources-list">
+                      <li class="resources-list-item">
+                        <div class="resources__logo">
+                          <img
+                            src="img/landbook-logo.png"
+                            alt="landbook logo"
+                          />
+                        </div>
+
+                        <div class="resources-list-description">
+                          <p class="resources-list-description-heading">
+                            <a
+                              href="https://land-book.com/"
+                              class="resources-link"
+                              target="_blank"
+                              >Land Book</a
+                            >
+                          </p>
+                          <span class="resources-list-description-text"
+                            >Nơi đăng tải những trang web có thiết kế đẹp, mình
+                            luôn vào đây khi cần ý tưởng.</span
+                          >
+                        </div>
+                      </li>
+                      <li class="resources-list-item">
+                        <div class="resources__logo">
+                          <img
+                            src="img/dribbble-logo.png"
+                            alt="unsplash logo"
+                          />
+                        </div>
+
+                        <div class="resources-list-description">
+                          <p class="resources-list-description-heading">
+                            <a
+                              href="https://dribbble.com/"
+                              class="resources-link"
+                              target="_blank"
+                              >Dribbble</a
+                            >
+                          </p>
+                          <span class="resources-list-description-text"
+                            >Một trong những nơi được tìm đến nhiều nhất khi cần
+                            thiết kế, ý tưởng cho website.</span
+                          >
+                        </div>
+                      </li>
+                      <li class="resources-list-item">
+                        <div class="resources__logo">
+                          <img
+                            src="img/awwwards-logo.png"
+                            alt="awwwards logo"
+                          />
+                        </div>
+
+                        <div class="resources-list-description">
+                          <p class="resources-list-description-heading">
+                            <a
+                              href="https://www.awwwards.com/websites/"
+                              class="resources-link"
+                              target="_blank"
+                              >Awwwards</a
+                            >
+                          </p>
+                          <span class="resources-list-description-text"
+                            >Giải thưởng cho những thiết kế web sáng tạo và đổi
+                            mới.
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="how-img-box">
+              <img
+                src="img/how-illustrate.png"
+                alt="how illustrate"
+                class="how-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PORTFOLIO SECTION -->
+      <section class="section section-portfolio" id="portfolio">
+        <div class="container center-text">
+          <span class="subheading"> Portfolio </span>
+          <p class="heading-secondary">Tất cả những dự án mà mình đã làm</p>
+        </div>
+
+        <div class="portfolio-projects container grid--3-cols grid">
+          <div class="portfolio-project">
+            <div class="project-img-box">
+              <img src="img/omnifood-logo.png" alt="" class="project-img" />
+            </div>
+            <div class="project-content">
+              <div class="project-title">Omnifood</div>
+              <div class="project-text">
+                Website đầu tiên của mình khi học về
+                <span class="strong">HTML5</span>,
+                <span class="strong">CSS</span> và một ít
+                <span class="strong">JavaScript</span>
+              </div>
+              <a
+                href="https://omnifood-duyfedev.netlify.app/"
+                class="project-link"
+                target="_blank"
+                >Xem thêm &rarr;</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-project">
+            <div class="project-img-box">
+              <img src="img/bankist-icon.png" alt="" class="project-img" />
+            </div>
+            <div class="project-content">
+              <div class="project-title">Bankist</div>
+              <div class="project-text">
+                Bổ sung animation cho trang web với
+                <span class="strong">JavaScript</span>
+              </div>
+              <a
+                href="https://bankist-dom-duyfedev.netlify.app/"
+                class="project-link"
+                target="_blank"
+                >Xem thêm &rarr;</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-project">
+            <div class="project-img-box">
+              <img src="img/forkily-logo.png" alt="" class="project-img" />
+            </div>
+            <div class="project-content">
+              <div class="project-title">forkily</div>
+              <div class="project-text">
+                Xây dựng ứng dụng web với
+                <span class="strong">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TESTIMONIALS SECTION -->
+      <section class="section section-testimonial" id="testimonial">
+        <div class="container">
+          <span class="subheading"> Chứng thực </span>
+          <p class="testimonial-heading">Mọi người nói gì về mình?</p>
+        </div>
+        <div class="slider">
+          <div class="slide">
+            <picture>
+              <source srcset="img/TESTIMONIAL-1.webp" type="image/webp" />
+              <source srcset="img/TESTIMONIAL-1 Min.jpg" type="image/jpg" />
+
+              <img
+                src="img/TESTIMONIAL-1 Min.jpg"
+                class="testimonial-img"
+                alt="Profile Picture"
+              />
+            </picture>
+            <blockquote class="testimonial-blockquote">
+              <p class="testimonial-text">
+                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                quis dolor nostrum maiores soluta illum a eligendi Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit."
+              </p>
+              <p class="testimonial-author">Harps Joseph</p>
+              <p class="testimonial-job">Senior Front-end Dev</p>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <picture>
+              <source srcset="img/TESTIMONIAL-2.webp" type="image/webp" />
+              <source srcset="img/TESTIMONIAL-2 Min.jpg" type="image/jpg" />
+
+              <img
+                src="img/TESTIMONIAL-2 Min.jpg"
+                class="testimonial-img"
+                alt="Profile Picture"
+              />
+            </picture>
+            <blockquote class="testimonial-blockquote">
+              <p class="testimonial-text">
+                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                quis dolor nostrum maiores soluta illum a eligendi Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit."
+              </p>
+              <p class="testimonial-author">Charles Etoroma</p>
+              <p class="testimonial-job">Professional Photographer</p>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <picture>
+              <source srcset="img/TESTIMONIAL-3.webp" type="image/webp" />
+              <source srcset="img/TESTIMONIAL-3 Min.jpg" type="image/jpg" />
+
+              <img
+                src="img/TESTIMONIAL-3 Min.jpg"
+                class="testimonial-img"
+                alt="Profile Picture"
+              />
+            </picture>
+            <blockquote class="testimonial-blockquote">
+              <p class="testimonial-text">
+                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                quis dolor nostrum maiores soluta illum a eligendi Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit."
+              </p>
+              <p class="testimonial-author">Ian Dooley</p>
+              <p class="testimonial-job">Junior Front-end Dev</p>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <picture>
+              <source srcset="img/TESTIMONIAL-4.webp" type="image/webp" />
+              <source srcset="img/TESTIMONIAL-4 Min.jpg" type="image/jpg" />
+
+              <img
+                src="img/TESTIMONIAL-4 Min.jpg"
+                class="testimonial-img"
+                alt="Profile Picture"
+              />
+            </picture>
+            <blockquote class="testimonial-blockquote">
+              <p class="testimonial-text">
+                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                quis dolor nostrum maiores soluta illum a eligendi Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit."
+              </p>
+              <p class="testimonial-author">Michael Dam</p>
+              <p class="testimonial-job">Seller</p>
+            </blockquote>
+          </div>
+          <div class="dots">
+            <!-- <button class="dot dot--fill" data-slide="0">&nbsp;</button>
+            <button class="dot" data-slide="1">&nbsp;</button>
+            <button class="dot" data-slide="2">&nbsp;</button> -->
+          </div>
+
+          <button class="testimonial-btn btn--left">
+            <ion-icon
+              name="chevron-back-outline"
+              class="testimonial-icon"
+            ></ion-icon>
+          </button>
+          <button class="testimonial-btn btn--right">
+            <ion-icon
+              name="chevron-forward-outline"
+              class="testimonial-icon"
+            ></ion-icon>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="container grid footer-grid">
+          <div class="logo-col">
+            <a href="#" class="logo">DuyFE</a>
+            <div class="footer-logo-box">
+              <ul class="footer-logos">
+                <li>
+                  <a
+                    href="https://www.facebook.com/phamthienduy181"
+                    target="_blank"
+                    class="footer-logo-link"
+                    ><ion-icon
+                      name="logo-facebook"
+                      class="footer-logo"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/Thienduy181Duy"
+                    class="footer-logo-link"
+                    target="_blank"
+                    ><ion-icon
+                      name="logo-twitter"
+                      class="footer-logo"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/pham-thien-duy-ab5a0714a/"
+                    class="footer-logo-link"
+                    target="_blank"
+                    ><ion-icon
+                      name="logo-linkedin"
+                      class="footer-logo"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/thienduy181"
+                    class="footer-logo-link"
+                    target="_blank"
+                    ><ion-icon name="logo-github" class="footer-logo"></ion-icon
+                  ></a>
+                </li>
+              </ul>
+              <p class="copyright">
+                Copyright &#169; <span class="year">2021</span> by Pham Thien
+                Duy. All rights reserved.
+              </p>
+            </div>
+          </div>
+          <nav class="nav-col">
+            <ul class="footer-nav-links">
+              <li><a href="#about" class="footer-nav-link">Giới thiệu</a></li>
+              <li>
+                <a href="#portfolio" class="footer-nav-link">Portfolio</a>
+              </li>
+              <li>
+                <a href="#testimonial" class="footer-nav-link">Chứng thực</a>
+              </li>
+              <li><a href="#" class="footer-nav-link">Resume</a></li>
+            </ul>
+          </nav>
+
+          <div class="address-col">
+            <div class="footer-heading">Địa chỉ</div>
+            <div class="footer-nav-links">
+              <a href="tel:093-8004-592" class="footer-link">093-8004-592</a>
+              <a href="mailto:thienduy181@gmail.com" class="footer-link"
+                >thienduy181@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <div class="contact-col">
+            <div class="footer-heading">LIÊN HỆ</div>
+            <p class="footer-text">
+              Để lại email và mình sẽ liên hệ lại sớm nhất có thể nhé!
+            </p>
+            <form class="footer-cta" name="email-submit" method="POST" netlify>
+              <input
+                class="footer-email-input"
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+              />
+              <button type="submit" class="footer-cta-button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal-header">
+        ----- <span class="modal-highlight">LIÊN HỆ</span> -----
+      </h2>
+      <form class="modal-form" name="contact" method="POST" netlify>
+        <label for="full-name">Tên: </label>
+        <input name="full-name" id="full-name" type="text" />
+        <label for="email">Email: </label>
+        <input type="email" name="email" required />
+        <label>Lời nhắn: </label>
+        <textarea name="message"></textarea>
+        <button class="btn btn-modal" type="submit">Gửi</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

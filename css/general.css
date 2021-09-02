@@ -1,0 +1,288 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+
+Default: 
+Medium: 
+Semi-bold: 
+Bold: 
+
+- Line heights
+
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+
+0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: 
+#4dabf7
+
+- Tints:
+
+
+- Shades: 
+#3e89c6 
+#2e6794
+#27567c
+- Accents:
+
+- Greys
+#333 (font color)
+#6f6f6f
+#f8f9fa
+
+--- 03 SHADOWS
+
+--- 04 BORDER-RADIUS
+
+--- 05 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem #1f4463b9;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4dabf7;
+  outline: 1px solid slategrey;
+  border-radius: 100px;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+/* Put element into an container to center it */
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-ternary {
+  font-weight: 700;
+  color: #313131;
+  letter-spacing: -0.5;
+}
+
+.heading-primary {
+  font-size: 6.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  letter-spacing: -1px;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-ternary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.heading-small {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 0.8rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #3e89c6;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+  padding-left: 3px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 100px;
+
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #4dabf7;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #2e6794;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  color: #313131;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #f5f5f7;
+  box-shadow: inset 0 0 0 3px #0466c8;
+}
+
+/* SECTIONS */
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+/* HELPER/SETTINGS CLASSES */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.highlight {
+  position: relative;
+  color: #fff;
+}
+
+.highlight::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.1);
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-image: linear-gradient(
+    90deg,
+    hsla(207, 91%, 64%, 1) 0%,
+    hsla(207, 92%, 67%, 1) 100%
+  );
+}
+
+.color-1 {
+  background-color: #459ade !important;
+}
+
+.color-2 {
+  background-color: #3e89c6 !important;
+}
+
+.color-3 {
+  background-color: #3678ad !important;
+}
+
+.color-4 {
+  background-color: #59a4eb !important;
+}
+
+.color-5 {
+  background-color: #7197d3 !important;
+}
+
+.color-6 {
+  background-color: #8a89ba !important;
+}
+.color-7 {
+  background-color: #a27ca2 !important;
+}
+
+.strong {
+  font-weight: 500;
+}
+
+.hidden {
+  visibility: hidden;
+  /* display: none !important; */
+  opacity: 0;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 3.2rem;
+}

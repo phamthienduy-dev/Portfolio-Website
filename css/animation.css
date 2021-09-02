@@ -1,0 +1,64 @@
+#html5 {
+  animation: loadhtml5 4s normal forwards;
+}
+
+#css3 {
+  animation: loadcss3 4s normal forwards;
+}
+
+#javascript {
+  animation: loadjs 4s normal forwards;
+}
+
+#react {
+  animation: loadreact 4s normal forwards;
+}
+
+#sass {
+  animation: loadsass 4s normal forwards;
+}
+
+@keyframes loadhtml5 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes loadcss3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes loadjs {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes loadreact {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes loadsass {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 0%;
+  }
+}

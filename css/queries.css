@@ -1,0 +1,648 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1240px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 78em) {
+  .hero {
+    max-width: 110rem;
+  }
+
+  .hero-greet {
+    font-size: 1.8rem;
+  }
+  .hero-name {
+    font-size: 4.4rem;
+  }
+  .hero-job {
+    font-size: 4.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 1170px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 73em) {
+  html {
+    font-size: 56.25%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  .subheading {
+    font-size: 1.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+    margin-bottom: 8rem;
+  }
+
+  .testimonial-heading {
+    font-size: 3.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 1060px (Tablets) */
+/**************************/
+
+@media (max-width: 66.25em) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    overflow-x: hidden;
+  }
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard  */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .modal {
+    top: 15%;
+    left: 15%;
+
+    transform: translate(0, 0);
+  }
+}
+
+/**************************/
+/* BELOW 940px (Tablets) */
+/**************************/
+
+@media (max-width: 58.75em) {
+  .main-nav {
+    overflow-x: hidden;
+  }
+  .grid {
+    column-gap: 4.8rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--2-cols {
+    gap: 3.2rem;
+  }
+
+  .portfolio-project:not(:last-child) {
+    max-width: 80%;
+    justify-self: center;
+  }
+
+  .portfolio-project:last-child {
+    max-width: 40%;
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .about-description,
+  .strong-description,
+  .where-description,
+  .where-description {
+    font-size: 1.8rem;
+  }
+
+  .skill-icon {
+    font-size: 6.2rem;
+  }
+
+  .strong-list-description-heading {
+    font-size: 2rem;
+  }
+  .strong-list-description-text {
+    font-size: 1.4rem;
+  }
+
+  .footer-grid {
+    column-gap: 3.2rem;
+  }
+  .footer-heading {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .footer-text {
+    font-size: 1.2rem;
+  }
+  .footer-logos {
+    gap: 1.6rem;
+  }
+  .copyright {
+    margin-top: 4.8rem;
+  }
+
+  .footer-nav-links {
+    gap: 2.4rem;
+  }
+
+  .footer-nav-link {
+    font-size: 1.6rem;
+  }
+
+  .btn-resource {
+    padding: 0.8rem 1.6rem;
+  }
+
+  .resources-list-description-text {
+    font-size: 1.2rem;
+  }
+
+  .overlay {
+    width: 50%;
+  }
+}
+
+/**************************/
+/* BELOW 810px (Smaller Tablets) */
+/**************************/
+
+@media (max-width: 50.625em) {
+  .html {
+    font-size: 44%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    max-width: 90rem;
+  }
+
+  .hero-greet {
+    font-size: 1.6rem;
+  }
+
+  .hero-logo {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+  }
+  .hero-job,
+  .hero-name {
+    font-size: 3.6rem;
+  }
+
+  .highlight::after {
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .heading-small {
+    font-size: 2.4rem;
+  }
+
+  .about-skills {
+    gap: 1.6rem;
+  }
+
+  .about-skill-heading {
+    font-size: 2rem;
+  }
+
+  .about-skill-box {
+    margin-top: 1.6rem;
+  }
+
+  .about-description,
+  .strong-description,
+  .where-description,
+  .where-description {
+    font-size: 1.6rem;
+  }
+
+  .skill-icon {
+    font-size: 5.2rem;
+  }
+
+  .strong-img,
+  .how-img,
+  .where-img {
+    width: 70%;
+  }
+
+  .grid--2-cols {
+    gap: 0rem;
+  }
+
+  .strong-list-logo-box {
+    height: 6rem;
+    width: 6rem;
+    padding: 0.8rem 1.4rem;
+  }
+
+  .resources__logo img {
+    width: 60%;
+  }
+
+  .resources-list-item {
+    grid-template-columns: 15fr 85fr;
+  }
+
+  .resources-list-description-heading {
+    font-size: 1.6rem;
+  }
+
+  .resources-list-item {
+    padding: 0.8rem 1.6rem;
+  }
+
+  .slide {
+    width: 90%;
+    margin: 8rem auto;
+    padding: 3rem 4.2rem 3rem 8.2rem;
+    gap: 6.4rem;
+  }
+
+  .btn--left {
+    transform: translate(65%, -50%);
+  }
+  .btn--right {
+    transform: translate(-65%, -50%);
+  }
+
+  .testimonial-text {
+    font-size: 1.4rem;
+  }
+
+  .testimonial-author {
+    font-size: 1rem;
+  }
+
+  .testimonial-job {
+    font-size: 1rem;
+  }
+
+  .footer-grid {
+    column-gap: 1.6rem;
+  }
+
+  .footer-nav-link,
+  .footer-heading {
+    font-size: 1.4rem;
+  }
+
+  .footer-link {
+    font-size: 1.2rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 20fr 15fr 15fr 45fr;
+  }
+
+  .logo:link,
+  .logo:visited {
+    font-size: 3rem;
+  }
+
+  .footer-logos {
+    gap: 1.2rem;
+  }
+
+  .footer-logo-box {
+    margin-top: 1.2rem;
+  }
+  .footer-logo {
+    font-size: 2rem;
+  }
+
+  .copyright {
+    margin-top: 3.2rem;
+    font-size: 1rem;
+  }
+}
+
+/**************************/
+/* BELOW 640px (Phones) */
+/**************************/
+
+@media (max-width: 40em) {
+  .hero-job {
+    line-height: 1.6;
+  }
+  .highlight {
+    display: inline-block;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-project {
+    width: 50% !important;
+  }
+
+  .portfolio-project:last-child {
+    max-width: 50%;
+  }
+
+  .profile-img-box {
+    margin-bottom: 6.4rem;
+    width: 50%;
+    justify-self: center;
+  }
+
+  .strong-img-box,
+  .where-img-box,
+  .how-img-box {
+    grid-row: 1;
+    margin-bottom: 3.2rem;
+  }
+
+  .strong-img-box img,
+  .where-img-box img,
+  .how-img-box img {
+    width: 50%;
+  }
+
+  .btn-resource {
+    font-size: 2rem;
+  }
+  .where-logo-img {
+    width: 25%;
+  }
+}
+
+/**************************/
+/* BELOW 400px ( Smaller Phones) */
+/**************************/
+
+@media (max-width: 25em) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+    /* padding-top: 50rem; */
+  }
+
+  .hero-job {
+    line-height: 1.6;
+  }
+
+  .highlight {
+    display: inline-block;
+  }
+
+  .hero-description {
+    margin-bottom: 3.2rem;
+  }
+
+  .hero-logos {
+    justify-self: flex-end;
+  }
+
+  .hero-logos-bar {
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    justify-self: flex-end;
+    right: 3.2rem;
+    transform: translateY(-14rem);
+    /* top: -3.2rem; */
+  }
+
+  .heading-secondary {
+    margin-bottom: 6.4rem;
+  }
+
+  .profile-img-box {
+    margin-bottom: 6.4rem;
+  }
+
+  .strong-img-box,
+  .where-img-box,
+  .how-img-box {
+    grid-row: 1;
+    margin-bottom: 3.2rem;
+  }
+
+  .where-description,
+  .where-logos-box {
+    margin-bottom: 3.2rem;
+  }
+  .where-description .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+  }
+  .btn-resource {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-project:last-child {
+    max-width: 80%;
+  }
+
+  .grid {
+    gap: 3.2rem;
+  }
+
+  .slider {
+    margin-top: 4.8rem;
+  }
+
+  .slide {
+    flex-direction: column;
+    padding-left: 4.2rem;
+    gap: 9.6rem;
+  }
+
+  .testimonial-img {
+    transform: scale(1.7);
+  }
+
+  .btn--left {
+    left: -15px;
+  }
+
+  .btn--right {
+    right: -15px;
+  }
+
+  .dots {
+    bottom: 0%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 40fr 60fr;
+    gap: 2.4rem;
+  }
+
+  .logo-col {
+    grid-row: 2;
+  }
+  .footer-email-input {
+    height: 4rem;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+  }
+
+  .footer-cta-button {
+    height: 4rem;
+    font-size: 1rem;
+  }
+  .nav-col {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .modal {
+    top: 66px;
+    left: 50px;
+    padding: 2.5rem 3rem;
+    transform: translate(0, 0);
+  }
+
+  .btn--close-modal {
+    font-size: 3rem;
+  }
+
+  .modal-header {
+    font-size: 2.4rem;
+  }
+  .modal-form {
+    grid-template-columns: 20fr 80fr;
+  }
+
+  .modal-form input,
+  .modal-form textarea {
+    margin-top: 1.6rem;
+    width: 20rem;
+  }
+  .modal-form label {
+    font-size: 1.2rem;
+  }
+
+  .btn-modal {
+    font-size: 1.2rem;
+  }
+}
+/**************************/
+/* Fixing Safari flexbox gap */
+/**************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 73em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 66.25em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
