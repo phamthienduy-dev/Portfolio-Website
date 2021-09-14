@@ -48,7 +48,7 @@ tabsContainer.addEventListener("mouseover", function (e) {
   );
 
   // Activate content area
-  console.log(clicked.dataset.tab);
+
   document
     .querySelector(`.resources__content-container--${clicked.dataset.tab}`)
     .classList.add("resources__content-container--active");
@@ -177,7 +177,6 @@ const allLinks = document.querySelectorAll("a:link");
 // Sticky navigation
 
 const sectionHeroEl = document.querySelector(".section-hero");
-console.log(sectionHeroEl);
 
 const obs = new IntersectionObserver(
   function (entries) {
@@ -224,11 +223,8 @@ allSections.forEach(function (section) {
 
 // Mobile nav
 const btnNavEl = document.querySelector(".btn-mobile-nav");
-console.log(btnNavEl);
 const headerEl = document.querySelector(".header");
-console.log(headerEl);
 const mainLinks = document.querySelectorAll(".main-nav-link");
-console.log(mainLinks);
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
